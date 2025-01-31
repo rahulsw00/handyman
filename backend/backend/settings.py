@@ -55,6 +55,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'users',
+    'rest_framework',
+    'corsheaders',
+    
 ]
 
 MIDDLEWARE = [
@@ -117,6 +121,11 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+# CORS settings for allowing requests from frontend
+CORS_ORIGIN_WHITELIST = (
+    'http://localhost:8000',
+)
 
 
 # Internationalization
