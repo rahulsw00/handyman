@@ -3,7 +3,7 @@ import api from "../api";
 import { useNavigate } from "react-router-dom";
 import { ACCESS_TOKEN, REFRESH_TOKEN } from "../constants";
 import LoadingIndicator from "./LoadingIndicator";
-import { CssBaseline, Container, Box, Card, CardContent } from "@mui/material";
+import "../styles/Form.css";
 
 function Form({ route, method }) {
   const [username, setUsername] = useState("");
@@ -35,7 +35,7 @@ function Form({ route, method }) {
 
   return (
     <>
-      {/* <form onSubmit={handleSubmit} className="form-container">
+      <form onSubmit={handleSubmit} className="form-container">
         <h1>{name}</h1>
         <input
           className="form-input"
@@ -55,11 +55,7 @@ function Form({ route, method }) {
         <button className="form-button" type="submit">
           {name}
         </button>
-      </form> */}
-      <CssBaseline />
-      <Container fixed>
-        <Box sx={{ bgcolor: "#cfe8fc", height: "50vh" }} />
-      </Container>
+      </form>
     </>
   );
 }

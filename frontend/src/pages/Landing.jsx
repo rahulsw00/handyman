@@ -1,10 +1,10 @@
-import Navigation from "../components/Navbar";
+import Navbar from "../components/Navbar/Navbar";
 
 function Landing() {
   return (
     <>
       <div>
-        <Navigation />
+        <Navbar />
         <h1>Landing Page</h1>
       </div>
     </>
