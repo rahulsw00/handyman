@@ -1,10 +1,10 @@
 import React from "react";
-import JobDescription from "./pages/JobDescription";
+import Categories from "./pages/Categories";
 
 export default function App() {
   return (
     <div>
-      <JobDescription></JobDescription>
+      <Categories></Categories>
     </div>
   );
 }
