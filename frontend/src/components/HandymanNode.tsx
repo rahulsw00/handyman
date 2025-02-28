@@ -2,13 +2,14 @@ import React from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import "../styles/JobNode.css";
+import "../styles/HandymanNode.css";
 
-const JobNode: React.FC = () => {
-  let JobTitle = "Job Title";
-  let JobDescription = "Job Description";
-  let JobAmount = "$###";
+const HandymanNode: React.FC = () => {
+  let Name = "Handyman Name";
+  let AboutHandyman =
+    "brief description about the handyman their job and experience";
   let ProfilePic = "../src/assets/dummypfp.webp";
+  let Rating = "user rating: 4.5";
   let UserName = "@shadcn";
   let AVFallback = UserName.slice(1, 2);
   return (
@@ -23,26 +24,26 @@ const JobNode: React.FC = () => {
               </Avatar>
             </div>
             <div className="col-2 flex-1 space-y ml-0">
-              <div className="grid grid-rows-4">
+              <div className="grid grid-rows-5 justify-center align-middle ">
                 <div className="row-start-1">
-                  <span className="flex items-center justify-between">
-                    <p className="title text-sm font-medium leading-none">
-                      {JobTitle}
-                    </p>
-                    <p className="JobAmount text-sm font-medium leading-none">
-                      {JobAmount}
-                    </p>
-                  </span>
+                  <p className="title text-sm font-medium leading-none">
+                    {Name}
+                  </p>
                 </div>
                 <div className="row-span-3">
                   <p className="description text-sm text-muted-foreground text-wrap">
-                    {JobDescription}
+                    {AboutHandyman}
+                  </p>
+                </div>
+                <div className="row-span-1">
+                  <p className="description text-sm text-muted-foreground text-wrap">
+                    {Rating}
                   </p>
                 </div>
               </div>
             </div>
             <div className="col-3">
-              <Button className="take">Take</Button>
+              <Button className="take">Hire</Button>
             </div>
           </div>
         </CardContent>
@@ -51,4 +52,4 @@ const JobNode: React.FC = () => {
   );
 };
 
-export default JobNode;
+export default HandymanNode;

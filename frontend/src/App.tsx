@@ -1,10 +1,11 @@
 import React from "react";
-import Categories from "./pages/Categories";
+import HandymanNode from "./components/HandymanNode";
+import { Hand } from "lucide-react";
 
 export default function App() {
   return (
     <div>
-      <Categories></Categories>
+      <HandymanNode></HandymanNode>
     </div>
   );
 }

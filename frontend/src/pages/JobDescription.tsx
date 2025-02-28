@@ -15,7 +15,7 @@ export default function JobDescription() {
       <div className="card bg-white shadow-md rounded-lg p-6 w-96 m-auto">
         <div className="flex items-center mb-4">
           <Avatar className="mr-4">
-            <AvatarImage src="/path/to/avatar.jpg" alt="Avatar" />
+            <AvatarImage src="../src/assets/dummypfp.webp" alt="Avatar" />
             <AvatarFallback>JD</AvatarFallback>
           </Avatar>
           <div>
