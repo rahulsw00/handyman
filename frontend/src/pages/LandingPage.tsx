@@ -310,7 +310,7 @@ export default function HandymanLandingPage() {
               </div>
             </div>
             <div className="border-t pt-6 text-center text-gray-500 text-sm">
-              <p>© 2025 HandyMan Pro. All rights reserved.</p>
+              <p>© 2025 HandyMan. All rights reserved.</p>
             </div>
           </div>
         </footer>
