@@ -98,7 +98,9 @@ const AuthPages = () => {
                 <Checkbox
                   id="terms"
                   checked={termsAccepted}
-                  //   onCheckedChange={setTermsAccepted}
+                  onCheckedChange={(checked) =>
+                    setTermsAccepted(checked === true)
+                  }
                 />
                 <Label htmlFor="terms" className="text-sm">
                   I have read and agree to the{" "}
