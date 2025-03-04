@@ -8,37 +8,6 @@ export default function HandymanLandingPage() {
     <div className="flex items-center justify-center h-full w-screen">
       <div className="flex flex-col min-h-screen font-sans bg-gray-50 items-center">
         <div className="w-full max-w-5xl">
-          {/* Header */}
-          <header className="sticky top-0 z-50 bg-white border-b shadow-sm">
-            <div className="container flex items-center justify-between py-4 mx-auto px-4">
-              <div className="flex items-center">
-                <div className="text-xl font-bold text-blue-700">HANDYMAN</div>
-              </div>
-              <nav className="hidden md:flex items-center gap-8">
-                <a href="#" className="text-gray-600 hover:text-blue-700">
-                  Home
-                </a>
-                <a href="#" className="text-blue-700 font-medium">
-                  Categories
-                </a>
-                <a href="#" className="text-gray-600 hover:text-blue-700">
-                  Jobs
-                </a>
-                <a href="#" className="text-gray-600 hover:text-blue-700">
-                  About Us
-                </a>
-              </nav>
-              <div>
-                <Button
-                  variant="outline"
-                  className="hidden md:inline-flex mr-2"
-                >
-                  Login
-                </Button>
-                <Button className="md:inline-flex">Hire Now</Button>
-              </div>
-            </div>
-          </header>
           {/* Hero Section */}
           <section className="py-12 md:py-20 bg-white w-full">
             <div className="w-fill px-4 grid md:grid-cols-2 gap-12 items-center">

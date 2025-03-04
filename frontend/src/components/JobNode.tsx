@@ -42,7 +42,9 @@ const JobNode: React.FC = () => {
               </div>
             </div>
             <div className="col-3">
-              <Button className="take">Take</Button>
+              <Button className="take">
+                <a href="/job">Take</a>
+              </Button>
             </div>
           </div>
         </CardContent>

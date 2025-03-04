@@ -4,6 +4,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
+import Navbar from "@/components/Navbar";
 
 const ProfilePage = () => {
   const [activeTab, setActiveTab] = useState("overview");
@@ -140,7 +141,6 @@ const ProfilePage = () => {
                   </svg>
                   {profile.location}
                 </div>
-
                 <div className="flex items-center mt-3">
                   {renderStars(profile.rating)}
                   <span className="ml-2 font-medium">{profile.rating}</span>
@@ -148,11 +148,9 @@ const ProfilePage = () => {
                     ({profile.totalReviews} reviews)
                   </span>
                 </div>
-
                 {profile.isHandyman && (
                   <Badge className="mt-3 bg-blue-600">{profile.jobType}</Badge>
                 )}
-
                 <div className="mt-4 w-full">
                   <div className="flex justify-between text-sm">
                     <span>Member since</span>
@@ -163,7 +161,6 @@ const ProfilePage = () => {
                     <span className="font-medium">{profile.completedJobs}</span>
                   </div>
                 </div>
-
                 <div className="flex flex-wrap gap-2 mt-4">
                   {profile.specialties.map((specialty, index) => (
                     <Badge
@@ -175,11 +172,9 @@ const ProfilePage = () => {
                     </Badge>
                   ))}
                 </div>
-
                 <Button className="w-full mt-6">Contact</Button>
               </div>
             </Card>
-
             {/* Contact Information */}
             <Card className="mt-6 shadow-md">
               <CardContent className="pt-6">
@@ -229,7 +224,6 @@ const ProfilePage = () => {
               </CardContent>
             </Card>
           </div>
-
           {/* Right column - Tabs for different sections */}
           <div className="md:col-span-2">
             <Card className="shadow-md">
@@ -240,13 +234,11 @@ const ProfilePage = () => {
                     <TabsTrigger value="experience">Experience</TabsTrigger>
                     <TabsTrigger value="reviews">Reviews</TabsTrigger>
                   </TabsList>
-
                   <TabsContent value="overview" className="space-y-6">
                     <div>
                       <h3 className="font-semibold text-lg mb-2">About</h3>
                       <p className="text-gray-600">{profile.bio}</p>
                     </div>
-
                     {profile.isHandyman &&
                       profile.qualifications.length > 0 && (
                         <div>
@@ -278,7 +270,6 @@ const ProfilePage = () => {
                         </div>
                       )}
                   </TabsContent>
-
                   <TabsContent value="experience" className="space-y-6">
                     {profile.experience.map((exp, index) => (
                       <div
@@ -294,7 +285,6 @@ const ProfilePage = () => {
                       </div>
                     ))}
                   </TabsContent>
-
                   <TabsContent value="reviews" className="space-y-6">
                     <div className="flex items-center space-x-6">
                       <div className="text-center">
@@ -308,7 +298,6 @@ const ProfilePage = () => {
                           {profile.totalReviews} reviews
                         </div>
                       </div>
-
                       <div className="flex-1 space-y-2">
                         {[5, 4, 3, 2, 1].map((rating) => (
                           <div key={rating} className="flex items-center">
@@ -341,7 +330,6 @@ const ProfilePage = () => {
                         ))}
                       </div>
                     </div>
-
                     {profile.reviews.map((review) => (
                       <div
                         key={review.id}

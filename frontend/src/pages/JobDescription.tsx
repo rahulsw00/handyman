@@ -47,7 +47,7 @@ export default function JobDescription() {
 
         <CardFooter className="flex justify-between items-center border-t pt-4">
           <span className="text-lg font-semibold">${jobData.amount}</span>
-          <Button>Apply Now</Button>
+          <Button>Take Job</Button>
         </CardFooter>
       </Card>
     </div>
