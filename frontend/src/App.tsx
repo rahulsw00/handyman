@@ -9,11 +9,12 @@ import ProfilePage from "./pages/ProflePage";
 import TakeJob from "./pages/TakeJob";
 import Navbar from "./components/Navbar";
 import AboutUs from "./pages/AboutUs";
-
+import TempNavBar from "./pages/TempNavBar";
 export default function App() {
   return (
     <Router>
       <Navbar />
+      <TempNavBar />
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/login" element={<AuthPages />} />

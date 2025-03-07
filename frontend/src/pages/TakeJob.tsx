@@ -66,7 +66,9 @@ const JobNode = () => {
           Learn More
         </button>
         <button className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
-          Take job
+          <a href="/job" className="text-black">
+            Take job
+          </a>
         </button>
       </div>
     </div>
@@ -86,10 +88,10 @@ export default function TakeJob() {
             <SelectValue placeholder="Category" />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="software">Software Engineering</SelectItem>
-            <SelectItem value="design">Design</SelectItem>
-            <SelectItem value="marketing">Marketing</SelectItem>
-            <SelectItem value="sales">Sales</SelectItem>
+            <SelectItem value="Category1">Category1</SelectItem>
+            <SelectItem value="Category2">Category2</SelectItem>
+            <SelectItem value="Category3">Category3</SelectItem>
+            <SelectItem value="Category4">Category4</SelectItem>
           </SelectContent>
         </Select>
         <Select>
@@ -97,10 +99,10 @@ export default function TakeJob() {
             <SelectValue placeholder="Location" />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="san-francisco">San Francisco</SelectItem>
-            <SelectItem value="new-york">New York</SelectItem>
-            <SelectItem value="remote">Remote</SelectItem>
-            <SelectItem value="hybrid">Hybrid</SelectItem>
+            <SelectItem value="Location1">Location1</SelectItem>
+            <SelectItem value="Location2">Location2</SelectItem>
+            <SelectItem value="Location3">Location3</SelectItem>
+            <SelectItem value="Location5">Location4</SelectItem>
           </SelectContent>
         </Select>
       </div>
