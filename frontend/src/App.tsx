@@ -1,5 +1,6 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
 import AuthPages from "./pages/LoginRegistration";
 import Categories from "./pages/Categories";
@@ -9,12 +10,38 @@ import ProfilePage from "./pages/ProflePage";
 import TakeJob from "./pages/TakeJob";
 import Navbar from "./components/Navbar";
 import AboutUs from "./pages/AboutUs";
+<<<<<<< HEAD
 import TempNavBar from "./pages/TempNavBar";
+
+const routes = [
+  { path: "/", element: <LandingPage /> },
+  { path: "/login", element: <AuthPages /> },
+  { path: "/categories", element: <Categories /> },
+  {
+    path: "/categories/:categoryId",
+    element: <CategoryLandingPage categoryName="exampleCategoryName" />,
+  },
+  { path: "/job", element: <JobDescription /> },
+  { path: "/profile", element: <ProfilePage /> },
+  { path: "/take-job", element: <TakeJob /> },
+  { path: "/about-us", element: <AboutUs /> },
+];
+=======
+>>>>>>> parent of 0ae08eb (update)
+
 export default function App() {
+  const router = createBrowserRouter(routes, {
+    basename: import.meta.env.BASE_URL,
+  });
+
   return (
     <Router>
-      <Navbar />
+<<<<<<< HEAD
       <TempNavBar />
+      <Navbar />
+      <Routes>{router}</Routes>
+=======
+      <Navbar />
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/login" element={<AuthPages />} />
@@ -28,6 +55,7 @@ export default function App() {
         <Route path="/take-job" element={<TakeJob />} />
         <Route path="/about-us" element={<AboutUs />} />
       </Routes>
+>>>>>>> parent of 0ae08eb (update)
     </Router>
   );
 }

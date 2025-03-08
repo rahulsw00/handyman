@@ -30,6 +30,7 @@
 {
   "compilerOptions": {
     "esModuleInterop": true,
+    "module": "es2020",
     "jsx": "react",
     // ...
     "baseUrl": ".",
