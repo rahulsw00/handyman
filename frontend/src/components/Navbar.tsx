@@ -26,7 +26,6 @@ const Navbar = () => {
           <Button variant="outline" className="hidden md:inline-flex mr-2">
             <a href="/login">Login</a>
           </Button>
-          <Button className="md:inline-flex">Hire Now</Button>
         </div>
       </div>
     </header>

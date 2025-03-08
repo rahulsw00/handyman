@@ -13,8 +13,9 @@ import TempNavBar from "./pages/TempNavBar";
 export default function App() {
   return (
     <Router>
-      <Navbar />
       <TempNavBar />
+      <Navbar />
+
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/login" element={<AuthPages />} />
