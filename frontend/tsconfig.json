@@ -9,6 +9,7 @@
     }
   ],
   "compilerOptions": {
+    "moduleResolution": "nodenext",
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
