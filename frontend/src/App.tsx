@@ -9,49 +9,13 @@ import ProfilePage from "./pages/ProflePage";
 import TakeJob from "./pages/TakeJob";
 import Navbar from "./components/Navbar";
 import AboutUs from "./pages/AboutUs";
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 import TempNavBar from "./pages/TempNavBar";
 
-const routes = [
-  { path: "/", element: <LandingPage /> },
-  { path: "/login", element: <AuthPages /> },
-  { path: "/categories", element: <Categories /> },
-  {
-    path: "/categories/:categoryId",
-    element: <CategoryLandingPage categoryName="exampleCategoryName" />,
-  },
-  { path: "/job", element: <JobDescription /> },
-  { path: "/profile", element: <ProfilePage /> },
-  { path: "/take-job", element: <TakeJob /> },
-  { path: "/about-us", element: <AboutUs /> },
-];
-=======
->>>>>>> parent of 0ae08eb (update)
-=======
->>>>>>> parent of 0ae08eb (update)
-
-=======
-import TempNavBar from "./pages/TempNavBar";
->>>>>>> parent of e6fb630 (update)
 export default function App() {
   return (
     <Router>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <TempNavBar />
-      <Navbar />
-      <Routes>{router}</Routes>
-=======
-=======
->>>>>>> parent of 0ae08eb (update)
-      <Navbar />
-=======
       <Navbar />
       <TempNavBar />
->>>>>>> parent of e6fb630 (update)
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/login" element={<AuthPages />} />
