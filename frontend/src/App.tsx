@@ -1,7 +1,10 @@
 import React from "react";
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { BrowserRouter as Router, Routes, Route } from "react-router";
 import LandingPage from "./pages/LandingPage";
+=======
+>>>>>>> parent of be0a65c (added routing)
 =======
 >>>>>>> parent of be0a65c (added routing)
 import AuthPages from "./pages/LoginRegistration";
