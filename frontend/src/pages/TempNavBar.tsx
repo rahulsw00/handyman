@@ -2,13 +2,25 @@ import React from "react";
 
 const TempNavBar = () => {
   return (
-    <div className="bg-gray-500">
+    <div className="w-40 h-72 bg-gray-500">
       <h3>Temp Nav Bar</h3>
-      <div className="flex">
-        <a href="/profile" className="text-red-400">
-          Profile page
-        </a>
-      </div>
+      <ul>
+        <li>
+          <a href="/profile">Profile</a>
+        </li>
+        <li>
+          <a href=""></a>
+        </li>
+        <li>
+          <a href=""></a>
+        </li>
+        <li>
+          <a href=""></a>
+        </li>
+        <li>
+          <a href=""></a>
+        </li>
+      </ul>
     </div>
   );
 };
