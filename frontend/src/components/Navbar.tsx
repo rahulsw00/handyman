@@ -9,22 +9,22 @@ const Navbar = () => {
           <div className="text-xl font-bold text-blue-700">HANDYMAN</div>
         </div>
         <nav className="hidden md:flex items-center gap-8">
-          <a href="/" className="text-gray-600 hover:text-blue-700">
+          <a href="#" className="text-gray-600 hover:text-blue-700">
             Home
           </a>
-          <a href="/categories" className="text-gray-600 hover:text-blue-700">
+          <a href="#" className="text-gray-600 hover:text-blue-700">
             Categories
           </a>
-          <a href="/take-job" className="text-gray-600 hover:text-blue-700">
+          <a href="#" className="text-gray-600 hover:text-blue-700">
             Jobs
           </a>
-          <a href="/about-us" className="text-gray-600 hover:text-blue-700">
+          <a href="#" className="text-gray-600 hover:text-blue-700">
             About Us
           </a>
         </nav>
         <div>
           <Button variant="outline" className="hidden md:inline-flex mr-2">
-            <a href="/login">Login</a>
+            Login
           </Button>
           <Button className="md:inline-flex">Hire Now</Button>
         </div>

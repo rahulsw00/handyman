@@ -1,32 +1,17 @@
 import React from "react";
+<<<<<<< HEAD
 import { BrowserRouter as Router, Routes, Route } from "react-router";
 import LandingPage from "./pages/LandingPage";
+=======
+>>>>>>> parent of be0a65c (added routing)
 import AuthPages from "./pages/LoginRegistration";
-import Categories from "./pages/Categories";
-import CategoryLandingPage from "./pages/CategoryProps";
-import JobDescription from "./pages/JobDescription";
 import ProfilePage from "./pages/ProflePage";
-import TakeJob from "./pages/TakeJob";
-import Navbar from "./components/Navbar";
-import AboutUs from "./pages/AboutUs";
+import { PhoneForwarded } from "lucide-react";
 
 export default function App() {
   return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/login" element={<AuthPages />} />
-        <Route path="/categories" element={<Categories />} />
-        <Route
-          path="/categories/:categoryId"
-          element={<CategoryLandingPage categoryName="exampleCategoryName" />}
-        />
-        <Route path="/job" element={<JobDescription />} />
-        <Route path="/profile" element={<ProfilePage />} />
-        <Route path="/take-job" element={<TakeJob />} />
-        <Route path="/about-us" element={<AboutUs />} />
-      </Routes>
-    </Router>
+    <div>
+      <ProfilePage></ProfilePage>
+    </div>
   );
 }
