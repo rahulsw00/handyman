@@ -11,6 +11,7 @@ import TakeJob from "./pages/TakeJob";
 import Navbar from "./components/Navbar";
 import AboutUs from "./pages/AboutUs";
 <<<<<<< HEAD
+<<<<<<< HEAD
 import TempNavBar from "./pages/TempNavBar";
 
 const routes = [
@@ -28,6 +29,8 @@ const routes = [
 ];
 =======
 >>>>>>> parent of 0ae08eb (update)
+=======
+>>>>>>> parent of 0ae08eb (update)
 
 export default function App() {
   const router = createBrowserRouter(routes, {
@@ -37,10 +40,13 @@ export default function App() {
   return (
     <Router>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <TempNavBar />
       <Navbar />
       <Routes>{router}</Routes>
 =======
+=======
+>>>>>>> parent of 0ae08eb (update)
       <Navbar />
       <Routes>
         <Route path="/" element={<LandingPage />} />

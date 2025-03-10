@@ -43,8 +43,12 @@
     "eslint-plugin-react-refresh": "^0.4.18",
     "globals": "^15.14.0",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "postcss": "^8.5.3",
     "react-router-dom": "^7.3.0",
+=======
+    "postcss": "^8.5.2",
+>>>>>>> parent of 0ae08eb (update)
 =======
     "postcss": "^8.5.2",
 >>>>>>> parent of 0ae08eb (update)
